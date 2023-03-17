@@ -1,4 +1,4 @@
-# rhythm-
+# rhythm
 
 music player with a secret...
 
