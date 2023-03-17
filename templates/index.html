@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <span style="font-size:30px" class="sidebutton" onclick="openNav()">&#9776;</span>
+    <h1 class="glow">Music Player</h1>
+    <form method="POST" class="button1" action="/play">
+      <label for="song">Select a song:</label>
+      <select id="song" name="song">
+        {% for song in songs %}
+        <option value="{{ song }}">{{ song }}</option>
+        {% endfor %}
+      </select>
+      <br><br>
+      <input type="submit" class="button" value="Play">
+    </form>
+    <br>
+    <h2 class="glow">Upload a song</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input type="file" class="button" name="file">
+      <br>
+      <input type="submit" class="button" value="Upload">
+    </form>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.youtube.com/watch?v=pGapnPawXqo">Press Me!</a>
+</div>
+    
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  </body>
+</html>

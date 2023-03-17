@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/07/4d/0f/074d0f0e457470c7d6a8116077d9ab17.gif");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 20px #e60073, 0 0 22px #e60073, 0 0 25px #e60073, 0 0 28px #e60073, 0 0 30px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 20px #e60073, 0 0 22px #e60073, 0 0 25px #e60073, 0 0 28px #e60073, 0 0 30px #e60073;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFE3F0;
+  color: #4C4452;
+}
+.button1{
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button1:hover {
+  background-color: #fffafc;
+  color: #4C4452;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  y-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-image: url(https://media.tenor.com/4RDjBNkkbUsAAAAd/anime-bocchi.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebutton{
+color:rgba(0,0,0,0)
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
