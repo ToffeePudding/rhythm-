@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Music Player</title>
+    <title>Rhythm The Music Player</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-    <span style="font-size:30px" class="sidebutton" onclick="openNav()">&#9776;</span>
-    <h1 class="glow">Music Player</h1>
+    <span style="font-size:25px;" class="sidebutton" onclick="openNav()">&#9776;</span>
+    <h1 class="glow">Rhythm - A Music Player</h1>
     <form method="POST" class="button1" action="/play">
       <label for="song">Select a song:</label>
-      <select id="song" name="song">
+      <select id="song" style="width: 25vmin;"name="song" >
         {% for song in songs %}
         <option value="{{ song }}">{{ song }}</option>
         {% endfor %}
@@ -18,8 +18,8 @@
       <br><br>
       <input type="submit" class="button" value="Play">
     </form>
-    <br>
-    <h2 class="glow">Upload a song</h2>
+    
+    <h2 class="glow">Upload a Song</h2>
     <form method="POST" action="/upload" enctype="multipart/form-data">
       <input type="file" class="button" name="file">
       <br>

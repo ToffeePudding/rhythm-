@@ -14,7 +14,7 @@ body {
 }
 
 .glow {
-  font-size: 80px;
+  font-size: 5vw;
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
@@ -35,6 +35,8 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 25vmin;
+
 }
 
 .button{
@@ -51,6 +53,7 @@ form {
   transition-duration: 0.4s;
   border-radius: 8px;
   cursor: pointer;
+  width: 35vmin;
 }
 .button:hover {
   background-color: #FFE3F0;
@@ -70,6 +73,7 @@ form {
   transition-duration: 0.4s;
   border-radius: 8px;
   cursor: pointer;
+  width: 35vmin;
 }
 .button1:hover {
   background-color: #fffafc;
